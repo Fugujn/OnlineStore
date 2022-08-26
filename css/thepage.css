@@ -170,6 +170,7 @@ h5.modal-title {
 
 .products ul .img-product img {
     width: 100%;
+    height: 220px;
 }
 
 .content-product .content-product-h3 {
@@ -367,3 +368,7 @@ h5.modal-title {
     float: right;
     margin: 5px;
 }
+
+/* img-prd {
+    height: 10px;
+} */
