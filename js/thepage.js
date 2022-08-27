@@ -44,7 +44,6 @@ window.addEventListener('load', function () {
             total = total + (price * quantity)
         }
         document.getElementsByClassName("cart-total-price")[0].innerText = total + 'VNĐ'
-
     }
     var quantity_input = document.getElementsByClassName("cart-quantity-input");
     for (var i = 0; i < quantity_input.length; i++) {
@@ -68,13 +67,11 @@ window.addEventListener('load', function () {
             var title = product.getElementsByClassName("content-product-h3")[0].innerText
             var price = product.getElementsByClassName("price")[0].innerText
             addItemToCart(title, price, img)
-            // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
             modal.style.display = "block";
 
             updatecart()
         })
     }
-
     function addItemToCart(title, price, img) {
         var cartRow = document.createElement('div')
         cartRow.classList.add('cart-row')
@@ -86,7 +83,6 @@ window.addEventListener('load', function () {
                 return
             }
         }
-
         var cartRowContents = `
   <div class="cart-item cart-column">
       <img class="cart-item-image" src="${img}" width="100" height="100">
